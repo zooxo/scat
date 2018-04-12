@@ -70,7 +70,6 @@ ScAt is a scientific calculator based on an Digispark (ATTINY85) microcontroller
   1 .08 ENTER 5 ANNU ... annuity factor for 5 years and 8%
   2 X=3.99 ... 5 years $1 each are equal to ~$4 invested with 8%
 ```
-  
 ### GAUSS:
 ```
                  y
