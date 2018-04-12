@@ -15,14 +15,18 @@ ScAt is a scientific calculator based on an Digispark (ATTINY85) microcontroller
 ## THE CALCULATOR
 ### 8-DIGITS SCIENTIFIC DISPLAY (permanent SCI notation):
 ```
-   mantissa  exponent
-   |         |
- - m.m m m - e e
- |         |
- sign      EE-sign
+    mantissa  exponent
+    |         |
+  - m.m m m - e e
+  |         |
+  sign      EE-sign
 ```
 ### KEYBOARD LAYOUT:
-```      (f)(zZZ)        7      [SQRT]    8       [POW]        9(/) [1/X]      [g]             4(GAUSS)[EXP]    5(ANNU)  [LN]        6(*)  [PI]      CHS(ROT)[EE]    1(RCL)  [SIN]    2(STO)  [COS]        3(-) [TAN]      C(BRIGHTNWSS)   0(SHOW)[ASIN]    .(SWAP)[ACOS]    ENTER(+)[ATAN]
+```
+  (f)(zZZ)        7      [SQRT]    8       [POW]        9(/) [1/X]
+  [g]             4(GAUSS)[EXP]    5(ANNU)  [LN]        6(*)  [PI]
+  CHS(ROT)[EE]    1(RCL)  [SIN]    2(STO)  [COS]        3(-) [TAN]
+  C(BRIGHTNWSS)   0(SHOW)[ASIN]    .(SWAP)[ACOS]    ENTER(+)[ATAN]
 ```
 ### ENTERING NUMBERS:
 ```
