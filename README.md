@@ -38,20 +38,73 @@ ScAt is a scientific calculator based on an Digispark (ATTINY85) microcontroller
   4 If applicable: Toggle sign of number with CHS
 ```
 ## OPERATIONS and KEYS
-### BASIC KEYS:
 
-0 1 2 3 4 5 6 7 8 9 . ... Digits and decimal point      CHS                   ... Change sign      ENTER                 ... Enter number (push stack)      C                     ... Clear X, clear entry or escape/stop      f g                   ... Function or shift to choose shifted keys
-    F-KEYS:      + - * /    ... Basic operations      STO RCL    ... Store number to respectively recall number from memory      SHOW       ... Show full mantissa of number (7 digits without decimal point)      SWAP       ... Swap X and Y register of stack (X<->Y)      ROT        ... Rotate stack (X=Y Y=Z Z=T T=X)      zZZ        ... Toggle screensaver      BRIGHTNESS ... Set brightness of display (0...7)
+### BASIC KEYS:
+```
+  0 1 2 3 4 5 6 7 8 9 . ... Digits and decimal point
+  CHS                   ... Change sign
+  ENTER                 ... Enter number (push stack)
+  C                     ... Clear X, clear entry or escape/stop
+  f g                   ... Function or shift to choose shifted keys
+  F-KEYS:      + - * /    ... Basic operations
+  STO RCL    ... Store number to respectively recall number from memory
+  SHOW       ... Show full mantissa of number (7 digits without decimal point)
+  SWAP       ... Swap X and Y register of stack (X<->Y)
+  ROT        ... Rotate stack (X=Y Y=Z Z=T T=X)
+  zZZ        ... Toggle screensaver      BRIGHTNESS ... Set brightness of display (0...7)
+```
 ### MENU-FUNCTIONS:
-EXP LN SQRT POWER INV            ... Basic scientific operations      GAUSS ANNU                       ... Probability(PDF/CDF), Annuity      SIN  COS  TAN  ASIN  ACOS  ATAN  ... Trigonometric
-    Note: Some functions (EE, COS, TAN, ACOS, GAUSS, GAMMA) may affect the whole          stack as they are calculated indirectly with basic operations.
+```
+  EXP LN SQRT POWER INV            ... Basic scientific operations
+  GAUSS ANNU                       ... Probability(PDF/CDF), Annuity
+  SIN  COS  TAN  ASIN  ACOS  ATAN  ... Trigonometric
+  
+  Note: Some functions (EE, COS, TAN, ACOS, GAUSS, GAMMA) may affect the whole
+  stack as they are calculated indirectly with basic operations.
+```
 ## SPECIALITIES
 ### ANNUITY (PRESENT VALUE):
-      Example to calculate the present value of a $1 5 year return with an      interest rate of 8%:        1 .08 ENTER 5 ANNU ... annuity factor for 5 years and 8%        2 X=3.99 ... 5 years $1 each are equal to ~$4 invested with 8%
-    GAUSS:                     y                     ^                     |                   1 ------------------------                     |       +++++++ CDF (Cumulative Distribution Function)                     |   +                     | +                     (x)         .                     |+              CDF = integral(PDF) = 1/(1+exp(-0.07*x^3-1.6*x))                     +                      (-inf)                   **+**                **  +|   **                  +  |     *         PDF = 1/sqrt(2*PI)*exp(-x*x/2)             ** +    |      **      +*+*+*+        |         ***** PDF (Probability Density Function)      ---------------+------------------------> x
-      Example to calculate PDF and CDF at x=0:        1 0 GAUSS        2 PDF=0.3989=1/sqrt(2*PI)        3 SWAP        4 CDF=0.5
+```
+  Example to calculate the present value of a $1 5 year return with an
+  interest rate of 8%:
+  1 .08 ENTER 5 ANNU ... annuity factor for 5 years and 8%
+  2 X=3.99 ... 5 years $1 each are equal to ~$4 invested with 8%
+```
+  
+### GAUSS:
+```
+                 y
+                 ^
+                 |
+               1 ------------------------
+                 |       +++++++ CDF (Cumulative Distribution Function)
+                 |   +
+                 | +                     (x)         .
+                 |+              CDF = integral(PDF) = 1/(1+exp(-0.07*x^3-1.6*x))
+                 +                      (-inf)
+               **+**
+            **  +|   **
+              +  |     *         PDF = 1/sqrt(2*PI)*exp(-x*x/2)
+         ** +    |      **
+  +*+*+*+        |         ***** PDF (Probability Density Function)
+  ---------------+------------------------> x
+  
+  Example to calculate PDF and CDF at x=0:
+  1 0 GAUSS
+  2 PDF=0.3989=1/sqrt(2*PI)
+  3 SWAP
+  4 CDF=0.5
+```
 ## APPENDIX
 ### HARDWARE:
-VCC=5V                   | 8.8.8.8.8.8.8.8. |            ---------       GND-|GND               |       VCC-| VCC  P1 |----------|DIO   *   *   *   |           |      P2 |----------|CLK   *   *   *   |       GND-| GND  P3 |----------|STB   *   *   *   |            ----------      VCC-|VCC   *   *   *   |            DIGISPARK            ------------------                                     QYF-TM1638
-
-
+```
+                            __________________
+  VCC=5V                   | 8.8.8.8.8.8.8.8. |
+       ---------       GND-|GND               |
+  VCC-| VCC  P1 |----------|DIO   *   *   *   |
+      |      P2 |----------|CLK   *   *   *   |
+  GND-| GND  P3 |----------|STB   *   *   *   |
+       ---------       VCC-|VCC   *   *   *   |
+       DIGISPARK            ------------------
+                                QYF-TM1638
+```
