@@ -3,7 +3,7 @@ Welcome to ScAt (Scientific RPN Calculator on a Digispark)  Version 1.0 ... (c)
 ScAt is free software. You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation.
 
 ## PREAMBLE
-It is amazing how much calculator power a simple board like the Disgispark is able to perform. Based on an ATTINY the Digispark offers flashing and power supply via USB interface. Unfortunately the according bootloader consumes more than 2 kilobyte of valuable flash memory. Nevertheless an optimized code can provide a wide range of commands and operations.
+It is amazing how much calculator power a simple board like the Disgispark is able to perform. Based on an ATTINY the Digispark offers flashing and power supply via USB interface. Unfortunately the according bootloader consumes more than 2 kilobytes of valuable flash memory. Nevertheless an optimized code can provide a wide range of commands and operations.
 
 In general, functionality and functions outweighted comfort and error handling which can be seen, for instance, looking at the permanent scientific display format or a "non interpretable" display after dividing by zero. Thus the user has to follow the calculation process more strictly than on conventional    RPN calculators.
 
