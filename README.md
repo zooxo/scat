@@ -1,4 +1,4 @@
-# Welcome to ScAt (Scientific RPN Calculator on a Digispark)
+# Welcome to ScAt - Scientific RPN Calculator on a Digispark
 Version 1.0 ... (c) 2018 by deetee/zooxo
 
 ScAt is free software. You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation.
