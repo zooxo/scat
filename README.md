@@ -47,8 +47,10 @@ ScAt is a scientific calculator based on an Digispark (ATTINY85) microcontroller
   CHS                   ... Change sign
   ENTER                 ... Enter number (push stack)
   C                     ... Clear X, clear entry or escape/stop
-  f g                   ... Function or shift to choose shifted keys
-  FUNCTION-KEYS:
+  f g                   ... Function or shift to choose shifted keys
+```
+### FUNCTION-KEYS:
+```  
   + - * /    ... Basic operations
   STO RCL    ... Store number to respectively recall number from memory
   SHOW       ... Show full mantissa of number (7 digits without decimal point)
