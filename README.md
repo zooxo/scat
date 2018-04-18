@@ -23,6 +23,7 @@ ScAt is a scientific calculator based on an Digispark (ATTINY85) microcontroller
   sign      EE-sign
 ```
 ### KEYBOARD LAYOUT:
+![scat_1_0](https://user-images.githubusercontent.com/16148023/38931287-2cc3950a-4302-11e8-909a-563e75e00413.png)
 ```
   (f)(zZZ)        7(R->P)[SQRT]    8(P->R) [POW]        9(/) [1/X]
   [g]             4(GAUSS)[EXP]    5(ANNU)  [LN]        6(*)  [PI]
