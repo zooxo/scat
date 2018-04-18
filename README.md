@@ -64,8 +64,9 @@ ScAt is a scientific calculator based on an Digispark (ATTINY85) microcontroller
   GAUSS ANNU                       ... Probability(PDF/CDF), Annuity
   SIN  COS  TAN  ASIN  ACOS  ATAN  ... Trigonometric
   
-  Note: Some functions (EE, COS, TAN, ACOS, GAUSS, GAMMA) may affect the whole
-  stack as they are calculated indirectly with basic operations.
+  Note: Some functions (EE, COS, TAN, ACOS, R->P, P->R, GAUSS, GAMMA)
+        may affect the whole stack as they are calculated indirectly
+        with basic operations.
 ```
 ## SPECIALITIES
 ### ANNUITY (PRESENT VALUE):
