@@ -24,7 +24,7 @@ ScAt is a scientific calculator based on an Digispark (ATTINY85) microcontroller
 ```
 ### KEYBOARD LAYOUT:
 ```
-  (f)(zZZ)        7      [SQRT]    8       [POW]        9(/) [1/X]
+  (f)(zZZ)        7(R->P)[SQRT]    8(P->R) [POW]        9(/) [1/X]
   [g]             4(GAUSS)[EXP]    5(ANNU)  [LN]        6(*)  [PI]
   CHS(ROT)[EE]    1(RCL)  [SIN]    2(STO)  [COS]        3(-) [TAN]
   C(BRIGHTNWSS)   0(SHOW)[ASIN]    .(SWAP)[ACOS]    ENTER(+)[ATAN]
@@ -60,6 +60,7 @@ ScAt is a scientific calculator based on an Digispark (ATTINY85) microcontroller
 ### MENU-FUNCTIONS:
 ```
   EXP LN SQRT POWER INV            ... Basic scientific operations
+  R->P P->R                        ... Polar/Rectangular conversion
   GAUSS ANNU                       ... Probability(PDF/CDF), Annuity
   SIN  COS  TAN  ASIN  ACOS  ATAN  ... Trigonometric
   
